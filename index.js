@@ -173,13 +173,13 @@ if(count==5){
         }
         
     })
+    form.reset();
+    setClassname(email);
+    setClassname(password);
+    setClassname(sex);
+    setClassname(rolei);
+    setClassname(permi);
 }
 
-form.reset();
-setClassname(email);
-setClassname(password);
-setClassname(sex);
-setClassname(rolei);
-setClassname(permi);
 
 }
