@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --myfont:'Bebas Neue', cursive;
+    --lg-lightcolor: linear-gradient(to left,rgba(116,235,213,0.6),rgba(159,172,230,0.3));
+    --lg-color: linear-gradient(to left,#74ed74,#9face6);
+}
+
+body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: var(--myfont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    overflow: hidden;
+    box-shadow: 0 2.8px 2.2px rgba(0,0,0,0.34);
+    width: 30%;
+    margin: 30px;
+}
+.role{
+   margin-bottom: 10px;
+}
+
+.perm{
+    margin-bottom: 10px;
+}
+
+.header{
+    background: var(--lg-color);
+    padding: 30px 0;
+}
+
+.header h2{
+    color: #222;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.form .btn{
+    background: var(--lg-color);
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    font-family: var(--myfont);
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+    
+    transition: all 1s ease;
+}
+
+.form-ctrl label{
+
+    display: inline-block;
+    margin-bottom: 5px;
+    
+}
+
+.sex{
+    margin-bottom: 20px;
+}
+
+.sex label{
+    margin-right: 10px;
+}
+
+.sex select{
+    font-family: var(--myfont);
+    font-size: 16px;
+
+}
+
+.form-ctrl{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-ctrl i{
+    position: absolute;
+    right: 8px;
+    top:42px;
+    visibility: hidden;
+}
+
+.form-ctrl small{
+    visibility: hidden;
+}
+
+.form-ctrl.error small{
+    visibility: visible;
+    font-size: 12px;
+}
+
+.sex small{
+    visibility: hidden;
+}
+
+.sex.error small{
+    visibility: visible;
+    font-size: 12px;
+}
+
+.permi small{
+    visibility: hidden;
+}
+
+.permi.error small{
+    visibility: visible;
+    font-size: 12px;
+}
+
+.role small{
+    visibility: hidden;
+}
+
+.role.error small{
+    visibility: visible;
+    font-size: 12px;
+}
+
+
+.form{
+    padding: 40px;
+    font-size: 18px;
+}
+
+.form-ctrl.success input{
+    border-color: #2ecc71;
+}
+
+.form-ctrl.error input{
+    border-color: #e74c3c;
+    
+}
+
+
+
+.form-ctrl.success i.fa-check-circle{
+    color:#2ecc71;
+    visibility: visible;
+}
+
+
+.form-ctrl.error i.fa-exclamation-circle{
+    color:#e74c3c;
+    visibility: visible;
+}
+.form-ctrl input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.form-ctrl input{
+    border: 2px solid #f0f0f0;
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+    
+    font-size: 14px;
+    padding: 10px;
+}
+
+.form .btn:hover{
+    background: linear-gradient(to left,#74ebd5,#9face6);
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+      width: auto;
+    }
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment-1</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>ASSIGNMENT FORM</h2>
+        </div>
+        <form  id="form" class="form">
+            <div class="form-ctrl">
+                <label for="">E-mail</label>
+                <input type="text" id="email" placeholder="Enter you e-mail" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error msg</small>
+
+            </div>
+            <div class="form-ctrl">
+                <label for="">Password</label>
+                <input type="text" id="password" placeholder="Enter you password" autocomplete="off">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>error msg</small>
+            </div>
+
+            <div class="sex">
+                <label for="cars">gender</label>
+                <select id="sex" name="sex">
+                    <option value="select">select</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">other</option>
+                </select><br>
+                <small>error msg</small>
+            </div>
+
+            <div class="role">
+                <p>Please select your role :</p>
+                <input type="radio" id="role" name="role" value="admin">
+                <label for="admin">admin</label><br>
+                <input type="radio" id="role" name="role" value="user">
+                <label for="user">user</label><br>
+                <small>error msg</small>
+            </div>
+            <div class="permi">
+                <p>Select Permission</p>
+                <input type="checkbox" id="perm" name="perm" value="perm1">
+                <label for="perm1"> Perm1</label><br>
+                <input type="checkbox" id="perm" name="perm" value="perm2">
+                <label for="perm2"> Perm2</label><br>
+                <input type="checkbox" id="perm" name="perm" value="perm3">
+                <label for="perm3">Perm3</label><br>
+                <small>error msg</small>
+            </div>
+            <input type="submit" class="btn" value="submit">
+
+        </form>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<script src="index.js"></script>
+
+</html>
+
